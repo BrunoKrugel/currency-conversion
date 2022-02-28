@@ -1,0 +1,22 @@
+{
+  "name": "currency-convertion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoKrugel/currency-convertion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoKrugel/currency-convertion/issues"
+  },
+  "homepage": "https://github.com/BrunoKrugel/currency-convertion#readme",
+  "dependencies": {
+    "money-js": "^1.0.2"
+  }
+}
