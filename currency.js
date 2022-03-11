@@ -19,7 +19,7 @@ async function getUSD(value) {
         }
     };
     await axios.request(options).then(function (response) {
-
+        console.log("1 BRL TO USD:" + response.data);
         let textData = "|Currency   | Conversion  |\n| ------------ | ------------ |\n|" + value + " BRL|" + response.data.toFixed(2) + " USD|";
 
         // Write the text to a file
