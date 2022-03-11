@@ -1,3 +1,3 @@
 |Currency   | Conversion  |
 | ------------ | ------------ |
-|2BRL|1USD|
+|1 BRL|0.20 USD|

@@ -1,4 +1,5 @@
 import axios from "axios";
+import fs from 'fs';
 import 'dotenv/config';
 
 const uri = process.env.RAPIDAPI_KEY;
@@ -18,7 +19,12 @@ async function getUSD(value) {
         }
     };
     await axios.request(options).then(function (response) {
-        console.log(response.data);
+
+        let textData = "|Currency   | Conversion  |\n| ------------ | ------------ |\n|" + value + " BRL|" + response.data.toFixed(2) + " USD|";
+
+        // Write the text to a file
+        fs.writeFileSync('README.md', textData);
+
         return response.data;
     }).catch(function (error) {
         return error;
